@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+"
+    "url": "git+https://github.com/jfet97/arraymake.git"
   },
   "author": "Andrea Simone Costa aka jfet97 <andrysimo1997@gmail.com>",
   "license": "MIT",
