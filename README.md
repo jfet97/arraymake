@@ -101,6 +101,6 @@ Array.make(3, (_, index, arrayUnderCostruction) => ({ safe: true, id: index }));
 
 Yes, I'm adding a static method to a native entity. If you don't like this approach, don't use my package.\
 I don't think that such a method will be ever added to the language, but if it were so I'm sure that a different name will be chosen. Like `fromLength`.
-TC39 i going to hate me for this.\
+TC39 is going to hate me for this.\
  \
 Peace ✌🏻.
