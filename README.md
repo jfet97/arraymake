@@ -107,6 +107,6 @@ Peace ✌🏻.
 
 If you disagree with the "extending natives" modus operandi, you can import the `arrayMake` function without affecting the prototype:
 ```js
-const { arrayMake } = require "arraymake/functional";
+const { arrayMake } = require("arraymake/functional");
 ```
 
