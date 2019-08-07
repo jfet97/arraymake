@@ -1,6 +1,6 @@
 {
   "name": "arraymake",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A new static method for the Array constructor that let you create an array with predefined length and filling values",
   "main": "dist/index.js",
   "files": [
@@ -31,7 +31,8 @@
     "jest": "^24.8.0",
     "rollup": "^1.18.0",
     "rollup-plugin-babel-minify": "^9.0.0",
-    "rollup-plugin-cleanup": "^3.1.1"
+    "rollup-plugin-cleanup": "^3.1.1",
+    "rollup-plugin-multi-input": "^1.0.2"
   },
   "jest": {
     "transform": {

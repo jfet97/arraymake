@@ -1,13 +1,15 @@
 import cleanup from "rollup-plugin-cleanup";
 import minify from "rollup-plugin-babel-minify";
 import pkg from "./package.json";
+import multiInput from 'rollup-plugin-multi-input';
 
 export default {
-  input: "src/index.js",
+  input: ["src/index.js", "src/functional.js"],
   output: [
     {
-      file: pkg.main,
-      format: "iife",
+      dir: "dist/",
+      format: "cjs",
+      esModule: false,
     }
   ],
   external: [
@@ -15,10 +17,11 @@ export default {
     ...Object.keys(pkg.devDependencies || {})
   ],
   plugins: [
+    multiInput({ relative: 'src/' }),
     cleanup({
       comments: "none",
       extensions: ["js"]
     }),
-    minify({}),
+    minify({}),,
   ]
 };

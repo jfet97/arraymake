@@ -21,8 +21,6 @@ $ npm i -S arraymake
 
 then import it:
 ```js
-import "arraymake";
-
 require("arraymake");
 ```
 
@@ -99,8 +97,16 @@ Array.make(3, (_, index, arrayUnderCostruction) => ({ safe: true, id: index }));
 
 ## pitfalls
 
-Yes, I'm adding a static method to a native entity. If you don't like this approach, don't use my package.\
+Yes, I'm adding a static method to a native entity. If you don't like this approach, jump to the [alternative](#alternative) section.\
 I don't think that such a method will be ever added to the language, but if it were so I'm sure that a different name will be chosen. Like `fromLength`.
 TC39 is going to hate me for this.\
  \
 Peace ✌🏻.
+
+## alternative
+
+If you disagree with the "extending natives" modus operandi, you can import the `arrayMake` function without affecting the prototype:
+```js
+const { arrayMake } = require "arraymake/functional";
+```
+
