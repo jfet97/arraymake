@@ -1,0 +1,41 @@
+{
+  "name": "arraymake",
+  "version": "0.0.1",
+  "description": "A new static method for the Array constructor that let you create an array with predefined length and filling values",
+  "main": "dist/index.js",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "rollup -c",
+    "watch": "rollup -cw"
+  },
+  "keywords": [
+    "length",
+    "fill",
+    "make",
+    "javascript",
+    "array"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "author": "Andrea Simone Costa aka jfet97 <andrysimo1997@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "rollup": "^1.18.0",
+    "rollup-plugin-babel-minify": "^9.0.0",
+    "rollup-plugin-cleanup": "^3.1.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  }
+}
