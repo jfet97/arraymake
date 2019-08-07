@@ -60,6 +60,7 @@ If provided, the first argument should be a `number` or a `string` coercible int
 Array.make(NaN); // TypeError
 Array.make(Infinite); // TypeError
 Array.make(-1); // TypeError
+Array.make(-3.7); // TypeError
 Array.make(null); // TypeError
 Array.make({}); // TypeError
 Array.make([]); // TypeError
