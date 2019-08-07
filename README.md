@@ -55,7 +55,7 @@ Remember that `undefined` means the absence of value in JavaScript:
 Array.make(undefined); // []
 ```
 
-If provided, the first argument should be a `number` or a `string` coercible into a valid numeric value. There are some restriction about the numeric values to be considered valid: the value should be different from `NaN`, positive and finite:
+If provided, the first argument should be a `number` or a `string` coercible into a valid numeric value. There are some restriction about the numeric values to be considered valid: the value should be different from `NaN`, positive, integer and finite:
 ```js
 Array.make(NaN); // TypeError
 Array.make(Infinite); // TypeError

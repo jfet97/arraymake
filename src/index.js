@@ -24,6 +24,7 @@ Array.make = Array.make || function (length, primitiveValueOrMapperFn) {
       t_length !== "number" ||
       length !== length || // avoid NaN
       length === Infinity || // too high
+      Math.floor(length) !== length || // no integer
       length < 0 // no sense
     ) {
       throw TypeError("Invalid value for argument length");

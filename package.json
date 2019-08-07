@@ -1,6 +1,6 @@
 {
   "name": "arraymake",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A new static method for the Array constructor that let you create an array with predefined length and filling values",
   "main": "dist/index.js",
   "files": [

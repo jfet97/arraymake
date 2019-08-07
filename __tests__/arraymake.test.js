@@ -64,6 +64,12 @@ describe("Array.make", () => {
     }).toThrow(TypeError);
   });
 
+  test('should properly detect a wrong length argument because it is not integer', () => {
+    expect(() => {
+      Array.make(3.1415);
+    }).toThrow(TypeError);
+  });
+
   test('should properly detect a wrong length argument because it is a string not convertible to a numerical value', () => {
     expect(() => {
       Array.make("q");
